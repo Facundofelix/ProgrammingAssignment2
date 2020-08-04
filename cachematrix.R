@@ -47,29 +47,29 @@ cacheSolve <- function(x, ...) {
 
 x <- matrix(c(2,0,0,3),2,2)
 
-A <- makeCacheMatrix(x)
-A$get()
-A$getinverse()
+test <- makeCacheMatrix(x)
+test$get()
+test$getinverse()
 
-cacheSolve(A)
-A$getinverse()
+cacheSolve(test)
+test$getinverse()
 
 # test with matrix "y" 
 y <- matrix(c(1,2,4,1),2,2)
 
-A <- makeCacheMatrix(y)
-A$get()
-A$getinverse()
+test <- makeCacheMatrix(x)
+test$get()
+test$getinverse()
 
-cacheSolve(A)
-A$getinverse()
+cacheSolve(test)
+test$getinverse()
 
 # test with matrix "z"
 z <- matrix(c(3,2,5,6),2,2)
 
-A <- makeCacheMatrix(z)
-A$get()
-A$getinverse()
+test <- makeCacheMatrix(x)
+test$get()
+test$getinverse()
 
-cacheSolve(A)
-A$getinverse()
+cacheSolve(test)
+test$getinverse()
